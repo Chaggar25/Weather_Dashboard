@@ -1,0 +1,24 @@
+// Define your RapidAPI key and API endpoint
+const apiKey = '8ebca9f28cmsh2d3b9f9a6282943p1d53a7jsnf53b2b807ce4';
+const apiUrl = 'https://open-weather-13.p.rapidapi.com/forecast';
+
+// Additional headers for RapidAPI
+const headers = {
+  'X-RapidAPI-Host': 'open-weather-13.p.rapidapi.com',
+  'X-RapidAPI-Key': apiKey,
+};
+
+// ...
+
+// In the fetch call, include the headers
+fetch(url, { headers })
+  .then(response => response.json())
+  .then(data => {
+    // Update the current weather container with the received data
+    // You will need to inspect the response structure from the Open Weather 13 API
+    // and update the code accordingly to display the desired weather data.
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+    currentWeatherContainer.innerHTML = 'Error fetching weather data';
+  });
