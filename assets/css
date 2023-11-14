@@ -1,6 +1,6 @@
 h1 {
 
     background: linear-gradient(to right, blue, purple);
-    color:antiquewhite;
+    color:darkgrey;
     text-align: center;
 }

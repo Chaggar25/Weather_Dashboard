@@ -12,7 +12,7 @@ function searchCity() {
 }
 function searchWeather(cityName) {
     console.log(cityName);
-    var apiurl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=aab9ea777839e319813126c72df76177";
+    var apiurl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=3ee8b3503a0dd26bd03708962f05d234"; 
     fetch(apiurl)
         .then(function (response) {
             return response.json()
@@ -26,7 +26,7 @@ function searchWeather(cityName) {
         <p>Humidity: ${currentData.main.humidity} %</p>
         `
         })
-    var apiurl = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&units=imperial&appid=aab9ea777839e319813126c72df76177";
+    var apiurl = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&units=imperial&appid=3ee8b3503a0dd26bd03708962f05d234";
     fetch(apiurl)
         .then(function (response) {
             return response.json()
